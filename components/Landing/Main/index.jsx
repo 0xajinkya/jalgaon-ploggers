@@ -34,7 +34,7 @@ const Index = () => {
                 fontWeight={600}
                 mt={2}
             >
-            "Let's keep our planet pristine <br/> Join our mission for a cleaner world."
+            &ldquo;Let&apos;s keep our planet pristine <br/> Join our mission for a cleaner world.&ldquo;
             </Typography>
             <Typography
                 textAlign={'center'}
