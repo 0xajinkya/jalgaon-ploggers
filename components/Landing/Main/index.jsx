@@ -5,10 +5,11 @@ import React from 'react'
 const Index = () => {
   return (
     <Box
-        height={'93vh'}
+        minHeight={'93vh'}
         display={'flex'}
-        flexDirection={'row'}
+        flexDirection={['column', 'row']}
         gap={'5vw'}
+        mt={[10, 0]}
     >
         <Box
             flex={1}
@@ -17,19 +18,19 @@ const Index = () => {
             justifyContent={'center'}
             alignItems={'center'}
             position={'relative'}
-            gap={'3vh'}
+            gap={'4vh'}
         >
             <Typography
                 sx={{
                     fontFamily: 'Pacifico',
-                    fontSize: '50px'
+                    fontSize: ['40px', '60px']
                 }}
             >
                 JalgaonPloggers
             </Typography>
             <Typography
                 fontFamily={'Montserrat'}
-                fontSize={'20px'}
+                fontSize={['18px', '25px']}
                 textAlign={'center'}
                 fontWeight={600}
                 mt={2}
@@ -38,37 +39,71 @@ const Index = () => {
             </Typography>
             <Typography
                 textAlign={'center'}
-                width={'35vw'}
+                width={['90vw', '35vw']}
                 fontFamily={'Quicksand'}
-                fontSize={'18px'}
+                fontSize={['15px', '20px']}
                 fontWeight={500}
             >
             Our mission is to create a cleaner, more sustainable future by empowering individuals and communities to take action towards better hygiene practices and a cleaner environment.
             </Typography>
+            <Box
+                display={['none', 'flex']}
+            >
             <Image 
                 src={'/images/BlueStroke.png'}
                 width={300}
-                height={50}
+                height={25}
                 style={{
                     zIndex: -1,
                     position: 'absolute',
-                    top: '37%',
-                    left: '38%',
+                    top: '31%',
+                    left: '43%',
                     transform: 'rotate(-5deg)'
                 }}
             />
+            </Box>
+
+            <Box
+                display={['flex', 'none']}
+            >
+            <Image 
+                src={'/images/BlueStroke.png'}
+                width={300}
+                height={25}
+                style={{
+                    zIndex: -1,
+                    position: 'absolute',
+                    top: '12%',
+                    left: '2%',
+                    transform: 'rotate(-5deg)'
+                }}
+            />
+            </Box>
         </Box>
         <Box
             flex={1}
-            display={'flex'}
+            display={['none', 'flex']}
             flexDirection={'column'}
             justifyContent={'center'}
             alignItems={'center'}
         >
             <Image 
                 src={'/images/Main.svg'}
-                width={400}
-                height={400}
+                width={500}
+                height={500}
+            />
+        </Box>
+        <Box
+            flex={1}
+            display={['flex', 'none']}
+            flexDirection={'column'}
+            justifyContent={'center'}
+            alignItems={'center'}
+        >
+            <Image 
+                src={'/images/Main.svg'}
+                width={250}
+                height={250}
             />
         </Box>
     </Box>
